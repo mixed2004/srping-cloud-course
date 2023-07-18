@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      discovery:
+        enabled: true
+      server:
+        native:
+          search-locations: C:\projects\MENTOR_I\ms-config-properties\client-service\dev
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
