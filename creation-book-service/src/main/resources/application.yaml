@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: creation-book-service
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      topic: 'book_topic'
+
+server:
+  port: 8087

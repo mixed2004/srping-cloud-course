@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: store-book-service
+  kafka:
+    consumer:
+      topic: 'checked_book_topic'
+    bootstrap-servers: localhost:9092
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: books
+
+server:
+  port: 8089
