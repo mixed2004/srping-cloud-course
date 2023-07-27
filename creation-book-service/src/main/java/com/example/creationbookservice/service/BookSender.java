@@ -35,7 +35,7 @@ public class BookSender {
 				.name(faker.book().title())
 				.description(faker.book().author())
 				.status("unchecked")
-				.price(faker.number().randomDouble(10, 2,5))
+				.price(faker.number().randomDouble(2, 2,15))
 				.build();
 	}
 }

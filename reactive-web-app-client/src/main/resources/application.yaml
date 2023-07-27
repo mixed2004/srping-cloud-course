@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: reactive-web-app-client
+
+server:
+  port: 8052

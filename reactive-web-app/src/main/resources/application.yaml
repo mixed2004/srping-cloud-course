@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: reactive-web-app
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: books
+
+server:
+  port: 8051
