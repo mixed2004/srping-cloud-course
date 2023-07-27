@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: creation-book-service
+
+  cloud:
+    function:
+      definition: bookProcessor
+    stream:
+      bindings:
+        bookProcessor-in-0:
+          destination: 'book_topic'
+        bookProcessor-out-0:
+          destination: 'checked_book_topic'
+  kafka:
+    binder:
+      brokers: localhost:9092
+
+server:
+  port: 8088

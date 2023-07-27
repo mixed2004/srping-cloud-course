@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: creation-book-service-func
+  cloud:
+    function:
+      definition: bookProducer
+    stream:
+      bindings:
+        bookProducer-out-0:
+          destination: 'book_topic'
+  kafka:
+    binder:
+      brokers: localhost:9092
+
+server:
+  port: 8087
